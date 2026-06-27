@@ -1,0 +1,29 @@
+# --- Secrets / local env ---
+# This loop needs no secrets (SauceDemo creds are public and documented).
+# The guardrail stays anyway so nothing sensitive can ever be committed by reflex.
+.env
+.env.*
+*.local
+
+# --- Node (only relevant if a package.json gets added later) ---
+node_modules/
+
+# --- Playwright MCP + test runtime output ---
+# Screenshots/traces are regenerable; FINDINGS.md carries the textual evidence.
+# Flip `evidence/` to tracked if you ever want committed proof alongside findings.
+evidence/
+.playwright-mcp/
+test-results/
+playwright-report/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS / editor cruft ---
+.DS_Store
+.idea/
+.vscode/
+
+# NOT ignored, on purpose: .codex/ (the loop's definition), AGENTS.md,
+# README.md, FINDINGS.md. These ARE the experiment and must be tracked.
