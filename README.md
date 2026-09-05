@@ -1,3 +1,5 @@
+> **Archived (September 2026).** A config-only loop-engineering experiment from June 2026: a scheduled Codex automation hunted functional bugs on SauceDemo, and an independent verifier subagent on a different model decided every candidate. The protocol it proved (default-FAIL verification, the verdict taxonomy, calibration) now lives in code and in prose at [reprove](https://github.com/ARMeeru/reprove), in [docs/VERIFICATION.md](https://github.com/ARMeeru/reprove/blob/main/docs/VERIFICATION.md).
+
 # saucedemo-loop
 
 First loop: scheduled functional E2E bug-hunting on SauceDemo, with maker-checker verification.
